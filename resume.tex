@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.25in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\usepackage{multicol}
+
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+% \name{Josh Cai} % Your name
+% \address{1926 Deercreek Dr. \\ Allen, TX 75013} % Your address
+
+% \address{joshua.cai@utdallas.edu \\ (972)~$\cdot$~352~$\cdot$~0246 \\ joshcai.com} % Your phone number and email
+
+
+
+
+\begin{document}
+% 1926 Deercreek Dr. \hfill (972)~$\cdot$~352~$\cdot$~0246 \\
+% Allen, TX 75013 \hfill joshcai.com\\
+\noindent\textbox{1926 Deercreek Dr.\hfill}\textbox{\hfil {\MakeUppercase{\namesize\bf Josh Cai}}\hfil}\textbox{\hfill 972 $\cdot$ 352 $\cdot$ 0246}\\
+\noindent\textbox{Allen, TX 75013\hfill}\textbox{\hfil joshcai.com\hfil}\textbox{\hfill joshua.cai@utdallas.edu}\medskip
+
+% something something something \hfill{\MakeUppercase{\bf Josh Cai}} \hfill something more\\
+
+% {\MakeUppercase{\bf Josh Cai}} \hfill (972)~$\cdot$~352~$\cdot$~0246\\
+% joshcai.com \hfill joshua.cai@utdallas.edu\\
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Oxford} \hfill Fall 2014 \\
+Studying abroad through Oxford Study Abroad Programme\smallskip \\
+{\bf University of Texas at Dallas} \hfill Aug 2012 - May 2016 \\
+B.S. in Computer Science, B.S. in Mathematics \hfill GPA: 4.0 (of 4.0)\smallskip \\
+{\bf University of North Texas} \hfill Aug 2010 - May 2012 \\
+Attended during high school for dual credit through the TAMS program \hfill GPA: 4.0 (of 4.0)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+%constructed, worked on
+
+\begin{rSection}{Experience}
+
+\begin{job_section}{Google}{Engineering Practicum Intern, {\em Release Automation Team}}{May 2014 - Aug 2014}{Mountain View, CA}
+\item Implemented an executor in Python to automatically generate release notes
+\item Queries for and parses millions of changelists to obtain relevant descriptions and bug information
+\item Uses the Jinja2 templating engine to display notes that are customizable by the user
+\item Eliminates the need to manually create release notes and can potentially affect 6000 projects
+\item Will save more than 100 hours of work per week across Google due to automation
+\end{job_section}
+
+\begin{job_section}{Random Logics}{Software Developer Intern}{Aug 2013 - Dec 2013}{Dallas, TX}
+\item Built a front end user interface using Twitter Bootstrap and D3.js
+\item Developed on the back end using Java through the Play framework
+\end{job_section}
+
+\begin{job_section}{University of Texas at Dallas}{Arts and Technology Intern}{June 2012 - Aug 2012}{Richardson, TX}
+\item Used CSS3 media queries to implement responsive design
+\end{job_section}
+
+\begin{job_section}{University of North Texas}{Undergraduate Research Assistant}{Sep 2011 - Dec 2012}{Denton, TX}
+\item Examined a subspace variant of the Middle Levels Problem
+\item Determined the number of Hamiltonian cycles in some of the bipartite graphs generated
+\end{job_section}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{project_section}{LectureSync}{January 2014}
+\item Web application to allow users to sync presentation slides with audio and personal notes
+\item Back end written using Node.js (Express framework) and MongoDB/Mongoose
+\end{project_section}
+
+\begin{project_section}{Personal Blog}{August 2013}
+\item Personal blog application/website developed using Django and MySQL
+\item Server hosted on an Amazon EC2 instance using Nginx
+\end{project_section}
+
+% \begin{job_section}{University of North Texas}{Undergraduate Research Assistant}{Sep 2011 - Dec 2012}{Denton, TX}
+% \item Examined a subspace variant of the Middle Levels Problem
+% \item Calculated the number of Hamiltonian cycles in some of the bipartite graphs generated
+% \end{job_section}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+\vspace{-0.05in}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & C/C++, Java, Python, JavaScript \\
+Web Development & Django, Node.js, Bootstrap \\
+Other & MySQL, MongoDB, Git, \LaTeX
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors \& Awards}
+
+\begin{honors_section}{McDermott Scholar}{August 2012 - Present}
+\item Selected for full-ride merit-based scholarship to UT Dallas given to 24 students
+\end{honors_section}
+
+\begin{honors_section}{Julian C. Stanley Scholar}{September 2011}
+\item Awarded to one student in high school class for excellence in mathematics
+\end{honors_section}
+
+\begin{honors_section}{NSF Research Training Group Scholar}{June 2011 - Aug 2011}
+\item Granted to {\raise.17ex\hbox{$\scriptstyle\sim$}}10 students at University of North Texas for researching in mathematics
+\end{honors_section}
+
+
+
+% \begin{job_section}{University of North Texas}{Undergraduate Research Assistant}{Sep 2011 - Dec 2012}{Denton, TX}
+% \item Examined a subspace variant of the Middle Levels Problem
+% \item Calculated the number of Hamiltonian cycles in some of the bipartite graphs generated
+% \end{job_section}
+
+\end{rSection}
+
+\begin{rSection2}{Relevant Coursework}
+% \begin{multicols}{3}
+% \setlength{\parskip}{0pt}
+%     \item Artificial Intelligence
+%     \item Computer Networks
+%     \item Operating System Concepts
+%     \item Graph Theory
+%     \item Data Structures \& Algorithms
+%     \item Automata Theory
+% \end{multicols}
+\begin{minipage}{0.33\textwidth}
+\centering
+Artificial Intelligence\\
+Computer Networks
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}
+\centering
+Operating System Concepts\\
+Graph Theory
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}
+\centering
+Data Structures \& Algorithms\\
+Software Engineering
+\end{minipage}
+\end{rSection2}
+
+
+
+\end{document}
