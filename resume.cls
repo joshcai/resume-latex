@@ -93,32 +93,19 @@
 %----------------------------------------------------------------------------------------
 
 % Defines the rSection environment for the large sections within the CV
-\newenvironment{rSection}[1]{ % 1 input argument - section name
+\newenvironment{rSection}[2][1.5em]{ % 2 input args - margin (default 1.5em), section name
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  \MakeUppercase{\bf #2} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \smallskip
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{#1} % Margin within the section
   }
   \item[]
 }{
   \end{list}
-}
-
-\newenvironment{rSection2}[1]{ % 1 input argument - section name
-  \sectionskip
-  \MakeUppercase{\bf #1} % Section title
-  \sectionlineskip
-  \hrule % Horizontal line
   \smallskip
-  \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{0em} % Margin within the section
-  }
-  \item[]
-}{
-  \end{list}
 }
 
 %----------------------------------------------------------------------------------------
